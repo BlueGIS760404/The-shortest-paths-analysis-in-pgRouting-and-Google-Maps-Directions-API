@@ -15,13 +15,15 @@ distance_list = [] <br>
 origin_id_list = [] <br>
 destination_id_list = [] <br>
 
-for (i1, row1) in df.iterrows():<br>
-  print("origin")
-  print(row1['ID'])
-  LatOrigin = row1['latitude']
-  LongOrigin = row1['longitude']
-  origin = (LatOrigin, LongOrigin)
-  origin_id = row1['ID'] 
+for (i1, row1) in df.iterrows():
+<ul>
+  <li> print("origin") </li>
+  <li> print(row1['ID']) </li>
+  <li> LatOrigin = row1['latitude'] </li>
+  <li> LongOrigin = row1['longitude'] </li>
+  <li> origin = (LatOrigin, LongOrigin) </li>
+  <li> origin_id = row1['ID'] </li>
+  </ul>
   for (i2, row2) in  df.iterrows():
     print("destination id")
     print(row2['ID'])
