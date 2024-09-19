@@ -1,10 +1,3 @@
-<style type="text/css">
-<!--
- .tab { margin-left: 40px; }
--->
-</style>
-
-
 __Google Maps Directions API__ <br>
 
 import pandas as pd <br>
