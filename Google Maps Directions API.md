@@ -15,25 +15,23 @@ distance_list = [] <br>
 origin_id_list = [] <br>
 destination_id_list = [] <br>
 
-for (i1, row1) in df.iterrows():
-<ul>
-  <li> print("origin") </li>
-  <li> print(row1['ID']) </li>
-  <li> LatOrigin = row1['latitude'] </li>
-  <li> LongOrigin = row1['longitude'] </li>
-  <li> origin = (LatOrigin, LongOrigin) </li>
-  <li> origin_id = row1['ID'] </li>
-  </ul>
-  for (i2, row2) in  df.iterrows():
-    print("destination id")
-    print(row2['ID'])
-    LatDestination = row2['latitude']
-    LongDestination = row2['longitude']
-    destination_id = row2['ID']
-    destination = (LatDestination, LongDestination)
-    result = gmaps.distance_matrix(origin, destination, mode = 'driving')
-    result_distance = result["rows"][0]["elements"][0]["distance"]["value"]
-    result_time = result["rows"][0]["elements"][0]["duration"]["value"]
+for (i1, row1) in df.iterrows(): <br>
+  print("origin") <br>
+  print(row1['ID']) <br>
+  LatOrigin = row1['latitude'] <br>
+  LongOrigin = row1['longitude'] <br>
+  origin = (LatOrigin, LongOrigin) <br>
+  origin_id = row1['ID'] <br>
+  for (i2, row2) in  df.iterrows(): <br>
+    print("destination id") <br>
+    print(row2['ID']) <br>
+    LatDestination = row2['latitude'] <br>
+    LongDestination = row2['longitude'] <br>
+    destination_id = row2['ID'] <br>
+    destination = (LatDestination, LongDestination) <br>
+    result = gmaps.distance_matrix(origin, destination, mode = 'driving') <br>
+    result_distance = result["rows"][0]["elements"][0]["distance"]["value"] <br>
+    result_time = result["rows"][0]["elements"][0]["duration"]["value"] <br>
 
     
     time_list.append(result_time)
