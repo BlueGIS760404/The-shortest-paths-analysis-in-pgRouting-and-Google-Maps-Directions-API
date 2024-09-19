@@ -1,6 +1,6 @@
-import pandas as pd
-import googlemaps
-from itertools import tee
+import pandas as pd <br>
+import googlemaps <br>
+from itertools import tee <br>
 
 df = pd.read_excel(r"F:\Paper\Journal\External quality assessment of OpenStreetMap street networks A validation framework for routing and navigation applications\Coding\Google Distance Matrix API/WGS84 POIs Table.xls")
 print(df)
