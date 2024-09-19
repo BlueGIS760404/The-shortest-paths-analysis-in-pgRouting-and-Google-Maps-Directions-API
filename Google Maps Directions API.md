@@ -16,7 +16,7 @@ origin_id_list = [] <br>
 destination_id_list = [] <br>
 
 for (i1, row1) in df.iterrows(): <br>
-  <pre> print("origin") </pre>pre><br>
+  <pre> print("origin") </pre><br>
   print(row1['ID']) <br>
   LatOrigin = row1['latitude'] <br>
   LongOrigin = row1['longitude'] <br>
