@@ -1,15 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
 import pandas as pd
 import googlemaps
 from itertools import tee
 
-df = pd.read_excel(r"F:\Paper\Journal\External quality assessment of OpenStreetMap street networks A validation framework for routing and navigation applications\Coding\Google Distance Matrix API/WGS84 POIs Table.xls")
+df = pd.read_excel(//data.xls")
 print(df)
 
 API_key = 'AIzaSyB7veDIBRdQIL0gNY43QX2eFKhcQWqkMTY'
@@ -57,4 +50,4 @@ output_v2
 
 output_v2[['city_x', 'city_y', 'Distance in meter', 'duration in seconds']]
 
-output_v2.to_excel(r"F:\Paper\Journal\External quality assessment of OpenStreetMap street networks A validation framework for routing and navigation applications\Coding\Google Distance Matrix API/WGS84 POIs Table_distancematrix.xls")
+output_v2.to_excel(//data.xls")
