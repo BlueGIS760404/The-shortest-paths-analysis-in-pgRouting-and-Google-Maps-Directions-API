@@ -1,19 +1,21 @@
+__Google Maps Directions API__ <br>
+
 import pandas as pd <br>
 import googlemaps <br>
 from itertools import tee <br>
 
-df = pd.read_excel(r"F:\Paper\Journal\External quality assessment of OpenStreetMap street networks A validation framework for routing and navigation applications\Coding\Google Distance Matrix API/WGS84 POIs Table.xls")
-print(df)
+df = pd.read_excel(//data.xls") <br>
+print(df) <br>
 
-API_key = 'AIzaSyB7veDIBRdQIL0gNY43QX2eFKhcQWqkMTY'
-gmaps = googlemaps.Client(key=API_key)
+API_key = '???' <br>
+gmaps = googlemaps.Client(key=API_key) <br>
 
-time_list = []
-distance_list = []
-origin_id_list = []
-destination_id_list = []
+time_list = [] <br>
+distance_list = [] <br>
+origin_id_list = [] <br>
+destination_id_list = [] <br>
 
-for (i1, row1) in df.iterrows():
+for (i1, row1) in df.iterrows():<br>
   print("origin")
   print(row1['ID'])
   LatOrigin = row1['latitude']
